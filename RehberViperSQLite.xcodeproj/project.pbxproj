@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C76AE3DD2ABA1EFF005F2EFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE3DC2ABA1EFF005F2EFE /* AppDelegate.swift */; };
+		C76AE3DF2ABA1EFF005F2EFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE3DE2ABA1EFF005F2EFE /* SceneDelegate.swift */; };
+		C76AE3E42ABA1EFF005F2EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76AE3E22ABA1EFF005F2EFE /* Main.storyboard */; };
+		C76AE3E62ABA1F00005F2EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76AE3E52ABA1F00005F2EFE /* Assets.xcassets */; };
+		C76AE3E92ABA1F00005F2EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76AE3E72ABA1F00005F2EFE /* LaunchScreen.storyboard */; };
+		C76AE3FA2ABA2213005F2EFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE3F92ABA2213005F2EFE /* ViewController.swift */; };
+		C76AE3FC2ABA2251005F2EFE /* AnasayfaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE3FB2ABA2251005F2EFE /* AnasayfaPresenter.swift */; };
+		C76AE3FE2ABA2260005F2EFE /* AnasayfaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE3FD2ABA2260005F2EFE /* AnasayfaInteractor.swift */; };
+		C76AE4002ABA2270005F2EFE /* AnasayfaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE3FF2ABA2270005F2EFE /* AnasayfaRouter.swift */; };
+		C76AE4032ABA229B005F2EFE /* AnasayfaProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE4022ABA229B005F2EFE /* AnasayfaProtocols.swift */; };
+		C76AE40D2ABA2384005F2EFE /* YeniKisiProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE40C2ABA2384005F2EFE /* YeniKisiProtocols.swift */; };
+		C76AE40F2ABA2398005F2EFE /* YeniKisiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE40E2ABA2398005F2EFE /* YeniKisiViewController.swift */; };
+		C76AE4112ABA23A5005F2EFE /* YeniKisiPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE4102ABA23A5005F2EFE /* YeniKisiPresenter.swift */; };
+		C76AE4132ABA23B8005F2EFE /* YeniKisiInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE4122ABA23B8005F2EFE /* YeniKisiInteractor.swift */; };
+		C76AE4152ABA23C6005F2EFE /* YeniKisiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE4142ABA23C6005F2EFE /* YeniKisiRouter.swift */; };
+		C76AE41D2ABA2489005F2EFE /* KisiDetayiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE41C2ABA2489005F2EFE /* KisiDetayiViewController.swift */; };
+		C76AE41F2ABA2496005F2EFE /* KisiDetayiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE41E2ABA2496005F2EFE /* KisiDetayiRouter.swift */; };
+		C76AE4212ABA24A1005F2EFE /* KisiDetayiProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE4202ABA24A1005F2EFE /* KisiDetayiProtocols.swift */; };
+		C76AE4232ABA24AF005F2EFE /* KisiDetayiPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE4222ABA24AF005F2EFE /* KisiDetayiPresenter.swift */; };
+		C76AE4252ABA24BE005F2EFE /* KisiDetayiInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE4242ABA24BE005F2EFE /* KisiDetayiInteractor.swift */; };
+		C76AE4292ABA2510005F2EFE /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AE4282ABA2510005F2EFE /* Kisiler.swift */; };
+		C76AE42F2ABA2951005F2EFE /* rehber.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C76AE42E2ABA2951005F2EFE /* rehber.sqlite */; };
+		C76AE43E2ABA29B6005F2EFE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C76AE4332ABA29B4005F2EFE /* FMDatabasePool.m */; };
+		C76AE43F2ABA29B6005F2EFE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C76AE4342ABA29B4005F2EFE /* FMDatabase.m */; };
+		C76AE4402ABA29B6005F2EFE /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C76AE4362ABA29B5005F2EFE /* FMDatabaseQueue.m */; };
+		C76AE4412ABA29B6005F2EFE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C76AE4382ABA29B5005F2EFE /* FMDatabaseAdditions.m */; };
+		C76AE4422ABA29B6005F2EFE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C76AE43B2ABA29B6005F2EFE /* FMResultSet.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C76AE3D92ABA1EFF005F2EFE /* RehberViperSQLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RehberViperSQLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76AE3DC2ABA1EFF005F2EFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C76AE3DE2ABA1EFF005F2EFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C76AE3E32ABA1EFF005F2EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C76AE3E52ABA1F00005F2EFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C76AE3E82ABA1F00005F2EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C76AE3EA2ABA1F00005F2EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C76AE3F92ABA2213005F2EFE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C76AE3FB2ABA2251005F2EFE /* AnasayfaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnasayfaPresenter.swift; sourceTree = "<group>"; };
+		C76AE3FD2ABA2260005F2EFE /* AnasayfaInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnasayfaInteractor.swift; sourceTree = "<group>"; };
+		C76AE3FF2ABA2270005F2EFE /* AnasayfaRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnasayfaRouter.swift; sourceTree = "<group>"; };
+		C76AE4022ABA229B005F2EFE /* AnasayfaProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnasayfaProtocols.swift; sourceTree = "<group>"; };
+		C76AE40C2ABA2384005F2EFE /* YeniKisiProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeniKisiProtocols.swift; sourceTree = "<group>"; };
+		C76AE40E2ABA2398005F2EFE /* YeniKisiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeniKisiViewController.swift; sourceTree = "<group>"; };
+		C76AE4102ABA23A5005F2EFE /* YeniKisiPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeniKisiPresenter.swift; sourceTree = "<group>"; };
+		C76AE4122ABA23B8005F2EFE /* YeniKisiInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeniKisiInteractor.swift; sourceTree = "<group>"; };
+		C76AE4142ABA23C6005F2EFE /* YeniKisiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeniKisiRouter.swift; sourceTree = "<group>"; };
+		C76AE41C2ABA2489005F2EFE /* KisiDetayiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KisiDetayiViewController.swift; sourceTree = "<group>"; };
+		C76AE41E2ABA2496005F2EFE /* KisiDetayiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KisiDetayiRouter.swift; sourceTree = "<group>"; };
+		C76AE4202ABA24A1005F2EFE /* KisiDetayiProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KisiDetayiProtocols.swift; sourceTree = "<group>"; };
+		C76AE4222ABA24AF005F2EFE /* KisiDetayiPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KisiDetayiPresenter.swift; sourceTree = "<group>"; };
+		C76AE4242ABA24BE005F2EFE /* KisiDetayiInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KisiDetayiInteractor.swift; sourceTree = "<group>"; };
+		C76AE4282ABA2510005F2EFE /* Kisiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
+		C76AE42E2ABA2951005F2EFE /* rehber.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = rehber.sqlite; sourceTree = "<group>"; };
+		C76AE4312ABA2988005F2EFE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C76AE4322ABA29B3005F2EFE /* RehberViperSQLite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RehberViperSQLite-Bridging-Header.h"; sourceTree = "<group>"; };
+		C76AE4332ABA29B4005F2EFE /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		C76AE4342ABA29B4005F2EFE /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		C76AE4352ABA29B4005F2EFE /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		C76AE4362ABA29B5005F2EFE /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		C76AE4372ABA29B5005F2EFE /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		C76AE4382ABA29B5005F2EFE /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		C76AE4392ABA29B5005F2EFE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		C76AE43A2ABA29B5005F2EFE /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		C76AE43B2ABA29B6005F2EFE /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		C76AE43C2ABA29B6005F2EFE /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		C76AE43D2ABA29B6005F2EFE /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C76AE3D62ABA1EFF005F2EFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C76AE3D02ABA1EFF005F2EFE = {
+			isa = PBXGroup;
+			children = (
+				C76AE3DB2ABA1EFF005F2EFE /* RehberViperSQLite */,
+				C76AE3DA2ABA1EFF005F2EFE /* Products */,
+				C76AE4302ABA2988005F2EFE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C76AE3DA2ABA1EFF005F2EFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE3D92ABA1EFF005F2EFE /* RehberViperSQLite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C76AE3DB2ABA1EFF005F2EFE /* RehberViperSQLite */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE4272ABA24FC005F2EFE /* Entity */,
+				C76AE3F42ABA2171005F2EFE /* Anasayfa-module */,
+				C76AE4062ABA2314005F2EFE /* YeniKisi-module */,
+				C76AE4162ABA23EE005F2EFE /* KisiDetayi-module */,
+				C76AE3DC2ABA1EFF005F2EFE /* AppDelegate.swift */,
+				C76AE3DE2ABA1EFF005F2EFE /* SceneDelegate.swift */,
+				C76AE3E22ABA1EFF005F2EFE /* Main.storyboard */,
+				C76AE3E52ABA1F00005F2EFE /* Assets.xcassets */,
+				C76AE3E72ABA1F00005F2EFE /* LaunchScreen.storyboard */,
+				C76AE3EA2ABA1F00005F2EFE /* Info.plist */,
+				C76AE42E2ABA2951005F2EFE /* rehber.sqlite */,
+				C76AE4392ABA29B5005F2EFE /* FMDatabase.h */,
+				C76AE4342ABA29B4005F2EFE /* FMDatabase.m */,
+				C76AE4372ABA29B5005F2EFE /* FMDatabaseAdditions.h */,
+				C76AE4382ABA29B5005F2EFE /* FMDatabaseAdditions.m */,
+				C76AE43C2ABA29B6005F2EFE /* FMDatabasePool.h */,
+				C76AE4332ABA29B4005F2EFE /* FMDatabasePool.m */,
+				C76AE43A2ABA29B5005F2EFE /* FMDatabaseQueue.h */,
+				C76AE4362ABA29B5005F2EFE /* FMDatabaseQueue.m */,
+				C76AE4352ABA29B4005F2EFE /* FMDB.h */,
+				C76AE43D2ABA29B6005F2EFE /* FMResultSet.h */,
+				C76AE43B2ABA29B6005F2EFE /* FMResultSet.m */,
+				C76AE4322ABA29B3005F2EFE /* RehberViperSQLite-Bridging-Header.h */,
+			);
+			path = RehberViperSQLite;
+			sourceTree = "<group>";
+		};
+		C76AE3F42ABA2171005F2EFE /* Anasayfa-module */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE4012ABA2280005F2EFE /* Protocols */,
+				C76AE3F82ABA21E6005F2EFE /* anasayfaView */,
+				C76AE3F72ABA21DB005F2EFE /* anasayfaPresenter */,
+				C76AE3F62ABA21CD005F2EFE /* anasayfaInteractor */,
+				C76AE3F52ABA219A005F2EFE /* anasayfaRouter */,
+			);
+			path = "Anasayfa-module";
+			sourceTree = "<group>";
+		};
+		C76AE3F52ABA219A005F2EFE /* anasayfaRouter */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE3FF2ABA2270005F2EFE /* AnasayfaRouter.swift */,
+			);
+			path = anasayfaRouter;
+			sourceTree = "<group>";
+		};
+		C76AE3F62ABA21CD005F2EFE /* anasayfaInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE3FD2ABA2260005F2EFE /* AnasayfaInteractor.swift */,
+			);
+			path = anasayfaInteractor;
+			sourceTree = "<group>";
+		};
+		C76AE3F72ABA21DB005F2EFE /* anasayfaPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE3FB2ABA2251005F2EFE /* AnasayfaPresenter.swift */,
+			);
+			path = anasayfaPresenter;
+			sourceTree = "<group>";
+		};
+		C76AE3F82ABA21E6005F2EFE /* anasayfaView */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE3F92ABA2213005F2EFE /* ViewController.swift */,
+			);
+			path = anasayfaView;
+			sourceTree = "<group>";
+		};
+		C76AE4012ABA2280005F2EFE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE4022ABA229B005F2EFE /* AnasayfaProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C76AE4062ABA2314005F2EFE /* YeniKisi-module */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE40B2ABA2362005F2EFE /* Protocols */,
+				C76AE40A2ABA2356005F2EFE /* yeniKisiView */,
+				C76AE4092ABA2346005F2EFE /* yeniKisiPresenter */,
+				C76AE4082ABA2336005F2EFE /* yeniKisiInteractor */,
+				C76AE4072ABA2325005F2EFE /* yeniKisiRouter */,
+			);
+			path = "YeniKisi-module";
+			sourceTree = "<group>";
+		};
+		C76AE4072ABA2325005F2EFE /* yeniKisiRouter */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE4142ABA23C6005F2EFE /* YeniKisiRouter.swift */,
+			);
+			path = yeniKisiRouter;
+			sourceTree = "<group>";
+		};
+		C76AE4082ABA2336005F2EFE /* yeniKisiInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE4122ABA23B8005F2EFE /* YeniKisiInteractor.swift */,
+			);
+			path = yeniKisiInteractor;
+			sourceTree = "<group>";
+		};
+		C76AE4092ABA2346005F2EFE /* yeniKisiPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE4102ABA23A5005F2EFE /* YeniKisiPresenter.swift */,
+			);
+			path = yeniKisiPresenter;
+			sourceTree = "<group>";
+		};
+		C76AE40A2ABA2356005F2EFE /* yeniKisiView */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE40E2ABA2398005F2EFE /* YeniKisiViewController.swift */,
+			);
+			path = yeniKisiView;
+			sourceTree = "<group>";
+		};
+		C76AE40B2ABA2362005F2EFE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE40C2ABA2384005F2EFE /* YeniKisiProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C76AE4162ABA23EE005F2EFE /* KisiDetayi-module */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE41B2ABA246A005F2EFE /* Protocols */,
+				C76AE41A2ABA2454005F2EFE /* kisiDetayiView */,
+				C76AE4192ABA2442005F2EFE /* kisiDetayiPresenter */,
+				C76AE4182ABA2432005F2EFE /* kisiDetayiInteractor */,
+				C76AE4172ABA2421005F2EFE /* kisiDetayiRouter */,
+			);
+			path = "KisiDetayi-module";
+			sourceTree = "<group>";
+		};
+		C76AE4172ABA2421005F2EFE /* kisiDetayiRouter */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE41E2ABA2496005F2EFE /* KisiDetayiRouter.swift */,
+			);
+			path = kisiDetayiRouter;
+			sourceTree = "<group>";
+		};
+		C76AE4182ABA2432005F2EFE /* kisiDetayiInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE4242ABA24BE005F2EFE /* KisiDetayiInteractor.swift */,
+			);
+			path = kisiDetayiInteractor;
+			sourceTree = "<group>";
+		};
+		C76AE4192ABA2442005F2EFE /* kisiDetayiPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE4222ABA24AF005F2EFE /* KisiDetayiPresenter.swift */,
+			);
+			path = kisiDetayiPresenter;
+			sourceTree = "<group>";
+		};
+		C76AE41A2ABA2454005F2EFE /* kisiDetayiView */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE41C2ABA2489005F2EFE /* KisiDetayiViewController.swift */,
+			);
+			path = kisiDetayiView;
+			sourceTree = "<group>";
+		};
+		C76AE41B2ABA246A005F2EFE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE4202ABA24A1005F2EFE /* KisiDetayiProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C76AE4272ABA24FC005F2EFE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE4282ABA2510005F2EFE /* Kisiler.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C76AE4302ABA2988005F2EFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C76AE4312ABA2988005F2EFE /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C76AE3D82ABA1EFF005F2EFE /* RehberViperSQLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C76AE3ED2ABA1F00005F2EFE /* Build configuration list for PBXNativeTarget "RehberViperSQLite" */;
+			buildPhases = (
+				C76AE3D52ABA1EFF005F2EFE /* Sources */,
+				C76AE3D62ABA1EFF005F2EFE /* Frameworks */,
+				C76AE3D72ABA1EFF005F2EFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RehberViperSQLite;
+			productName = RehberViperSQLite;
+			productReference = C76AE3D92ABA1EFF005F2EFE /* RehberViperSQLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C76AE3D12ABA1EFF005F2EFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					C76AE3D82ABA1EFF005F2EFE = {
+						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
+					};
+				};
+			};
+			buildConfigurationList = C76AE3D42ABA1EFF005F2EFE /* Build configuration list for PBXProject "RehberViperSQLite" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C76AE3D02ABA1EFF005F2EFE;
+			productRefGroup = C76AE3DA2ABA1EFF005F2EFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C76AE3D82ABA1EFF005F2EFE /* RehberViperSQLite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C76AE3D72ABA1EFF005F2EFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76AE3E92ABA1F00005F2EFE /* LaunchScreen.storyboard in Resources */,
+				C76AE42F2ABA2951005F2EFE /* rehber.sqlite in Resources */,
+				C76AE3E62ABA1F00005F2EFE /* Assets.xcassets in Resources */,
+				C76AE3E42ABA1EFF005F2EFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C76AE3D52ABA1EFF005F2EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76AE4002ABA2270005F2EFE /* AnasayfaRouter.swift in Sources */,
+				C76AE3DD2ABA1EFF005F2EFE /* AppDelegate.swift in Sources */,
+				C76AE43E2ABA29B6005F2EFE /* FMDatabasePool.m in Sources */,
+				C76AE43F2ABA29B6005F2EFE /* FMDatabase.m in Sources */,
+				C76AE3FA2ABA2213005F2EFE /* ViewController.swift in Sources */,
+				C76AE3FC2ABA2251005F2EFE /* AnasayfaPresenter.swift in Sources */,
+				C76AE4252ABA24BE005F2EFE /* KisiDetayiInteractor.swift in Sources */,
+				C76AE4412ABA29B6005F2EFE /* FMDatabaseAdditions.m in Sources */,
+				C76AE4212ABA24A1005F2EFE /* KisiDetayiProtocols.swift in Sources */,
+				C76AE40D2ABA2384005F2EFE /* YeniKisiProtocols.swift in Sources */,
+				C76AE4152ABA23C6005F2EFE /* YeniKisiRouter.swift in Sources */,
+				C76AE41F2ABA2496005F2EFE /* KisiDetayiRouter.swift in Sources */,
+				C76AE3FE2ABA2260005F2EFE /* AnasayfaInteractor.swift in Sources */,
+				C76AE4032ABA229B005F2EFE /* AnasayfaProtocols.swift in Sources */,
+				C76AE3DF2ABA1EFF005F2EFE /* SceneDelegate.swift in Sources */,
+				C76AE4132ABA23B8005F2EFE /* YeniKisiInteractor.swift in Sources */,
+				C76AE4232ABA24AF005F2EFE /* KisiDetayiPresenter.swift in Sources */,
+				C76AE4422ABA29B6005F2EFE /* FMResultSet.m in Sources */,
+				C76AE40F2ABA2398005F2EFE /* YeniKisiViewController.swift in Sources */,
+				C76AE4402ABA29B6005F2EFE /* FMDatabaseQueue.m in Sources */,
+				C76AE41D2ABA2489005F2EFE /* KisiDetayiViewController.swift in Sources */,
+				C76AE4112ABA23A5005F2EFE /* YeniKisiPresenter.swift in Sources */,
+				C76AE4292ABA2510005F2EFE /* Kisiler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C76AE3E22ABA1EFF005F2EFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C76AE3E32ABA1EFF005F2EFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C76AE3E72ABA1F00005F2EFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C76AE3E82ABA1F00005F2EFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C76AE3EB2ABA1F00005F2EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C76AE3EC2ABA1F00005F2EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C76AE3EE2ABA1F00005F2EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N445KV4YWW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RehberViperSQLite/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sametaydogdu.RehberViperSQLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RehberViperSQLite/RehberViperSQLite-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C76AE3EF2ABA1F00005F2EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N445KV4YWW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RehberViperSQLite/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sametaydogdu.RehberViperSQLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RehberViperSQLite/RehberViperSQLite-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C76AE3D42ABA1EFF005F2EFE /* Build configuration list for PBXProject "RehberViperSQLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76AE3EB2ABA1F00005F2EFE /* Debug */,
+				C76AE3EC2ABA1F00005F2EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C76AE3ED2ABA1F00005F2EFE /* Build configuration list for PBXNativeTarget "RehberViperSQLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76AE3EE2ABA1F00005F2EFE /* Debug */,
+				C76AE3EF2ABA1F00005F2EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C76AE3D12ABA1EFF005F2EFE /* Project object */;
+}
